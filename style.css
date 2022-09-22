@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(233, 47%, 7%);
+    position: relative;
+}
+.contain{
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 8rem;
+    top: 10rem;
+}
+.left{
+    width: 50%;
+    height: 50vh;
+    background-color: hsl(244, 38%, 16%);
+    position: relative;
+}
+.inside{
+    width: 80%;
+    height: 40vh;
+    position: absolute;
+    left: 4rem;
+    top: 2rem;
+    background-color: hsl(244, 38%, 16%);
+}
+.inside h1{
+    font-size: 35px;
+    color: aliceblue;
+}
+.inside span{
+    color: hsl(277, 64%, 61%);
+}
+.inside p{
+    font-size: 20px;
+    margin-top: 15px;
+    color: aliceblue;
+}
+.inner{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 5px;
+    margin-top: 40px;
+}
+.inner div h1{
+    font-size: 27px;
+}
+.inner div p{
+    margin-top: 0;
+    font-size: 15px;
+}
+.right{
+    width: 50%;
+    height: 50vh;
+    background: /*linear-gradient (0deg hsl(277, 64%, 61%)), */ url(/images/image-header-desktop.jpg);
+}
+
+
+@media only screen and (max-width: 800px) {
+    .container{
+        width: 100%;
+        height: 100vh;
+        background-color: hsl(233, 47%, 7%);
+        position: relative;
+    }
+    .contain{
+        width: 80%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 5rem;
+        top: 1rem;
+       
+    }
+    .left{
+        width: 50%;
+        height: 60vh;
+        background-color: hsl(244, 38%, 16%);
+        position: relative;
+        order: 1;
+    }
+    .inside{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: 0rem;
+        top: 2rem;
+        background-color: hsl(244, 38%, 16%);
+    }
+    .inside h1{
+        font-size: 35px;
+        color: aliceblue;
+        text-align: center;
+    }
+    .inside span{
+        color: hsl(277, 64%, 61%);
+    }
+    .inside p{
+        font-size: 20px;
+        margin-top: 15px;
+        color: aliceblue;
+        text-align: center;
+    }
+    .inner{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    .inner div h1{
+        font-size: 27px;
+        margin-top: 12px;
+    }
+    .inner div p{
+        margin-top: 0;
+        font-size: 15px;
+    }
+    .right{
+        width: 50%;
+        height: 50vh;
+        background: /*linear-gradient (0deg hsl(277, 64%, 61%)), */ url(/images/image-header-mobile.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
